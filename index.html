@@ -1,127 +1,98 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>핀테크 교육 - 현재 금융을 배우다</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-        body {
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 20px;
-        }
-        .hero {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
-            padding: 80px 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .hero h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-        }
-        .hero p {
-            font-size: 18px;
-            opacity: 0.9;
-        }
-        .cta-btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
-            background: #ff9800;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        .cta-btn:hover {
-            background: #e68900;
-        }
-        .features {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 50px;
-        }
-        .feature-box {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-            width: 30%;
-            min-width: 250px;
-            margin: 10px;
-        }
-        .feature-box h3 {
-            color: #1e3c72;
-            margin-bottom: 10px;
-        }
-        .footer {
-            margin-top: 50px;
-            padding: 20px;
-            background: #2a5298;
-            color: white;
-            text-align: center;
-            border-radius: 10px;
-        }
-        @media (max-width: 768px) {
-            .features {
-                flex-direction: column;
-                align-items: center;
-            }
-            .feature-box {
-                width: 90%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자기소개서 - 개발자 홍길동</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 40px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h1, h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section:last-child {
+      margin-bottom: 0;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <!-- 헤더: 이름과 한 줄 소개 -->
+    <header>
+      <h1>개발자 홍길동</h1>
+      <p>혁신적인 솔루션을 구현하는 웹/앱 개발자</p>
+    </header>
 
-    <div class="container">
-        <!-- Hero Section -->
-        <div class="hero">
-            <h1>핀테크 교육 - 현재 금융을 배우다</h1>
-            <p>디지털 금융 혁신을 주도할 수 있는 전문가가 되어보세요.</p>
-            <a href="#apply" class="cta-btn">지금 신청하기</a>
-        </div>
+    <!-- 자기소개 섹션 -->
+    <section class="section">
+      <h2>자기소개</h2>
+      <p>
+        안녕하세요. 저는 <strong>홍길동</strong>입니다. 다양한 프로그래밍 언어와 최신 기술을 활용하여 문제를 해결하는 데 열정을 가지고 있으며, 지속적인 학습과 성장에 힘쓰고 있습니다. 
+        창의적인 아이디어와 협업을 통해 항상 새로운 도전을 즐기고 있습니다.
+      </p>
+    </section>
 
-        <!-- Features Section -->
-        <div class="features">
-            <div class="feature-box">
-                <h3>📈 최신 핀테크 트렌드</h3>
-                <p>블록체인, AI 금융, 디지털 결제 등 최신 금융기술을 배웁니다.</p>
-            </div>
-            <div class="feature-box">
-                <h3>💡 실전 프로젝트 기반 학습</h3>
-                <p>이론만이 아닌, 실제 금융 데이터를 활용한 실전 프로젝트 진행.</p>
-            </div>
-            <div class="feature-box">
-                <h3>🎓 비전문가 손준서</h3>
-                <p>금융권 및 IT업계 출신 전문가들의 실무 강의 제공.</p>
-            </div>
-        </div>
+    <!-- 기술 스택 섹션 -->
+    <section class="section">
+      <h2>기술 스택</h2>
+      <ul>
+        <li>프로그래밍 언어: Python, JavaScript, Java</li>
+        <li>웹 프레임워크: React, Node.js, Django</li>
+        <li>데이터베이스: MySQL, PostgreSQL, MongoDB</li>
+        <li>도구 및 기타: Git, Docker, AWS</li>
+      </ul>
+    </section>
 
-        <!-- Footer Section -->
-        <div class="footer">
-            <p>© 2025 FinTech Academy. All rights reserved.</p>
-        </div>
-    </div>
+    <!-- 경력 및 프로젝트 섹션 -->
+    <section class="section">
+      <h2>경력 및 프로젝트</h2>
+      <p>
+        다양한 프로젝트와 인턴십 경험을 통해 실무 역량을 쌓아왔습니다. 최근에는 <strong>[프로젝트 이름]</strong> 프로젝트를 진행하며, [프로젝트 설명] 등의 경험을 보유하고 있습니다.
+      </p>
+    </section>
 
+    <!-- 연락처 섹션 -->
+    <section class="section">
+      <h2>연락처</h2>
+      <p>이메일: <a href="mailto:honggildong@example.com">honggildong@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/honggildong" target="_blank">https://github.com/honggildong</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/honggildong" target="_blank">https://linkedin.com/in/honggildong</a></p>
+    </section>
+  </div>
 </body>
 </html>
-
