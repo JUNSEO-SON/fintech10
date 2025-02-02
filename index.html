@@ -3,95 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>자기소개서 - 개발자 홍길동</title>
+  <title>CV - 홍길동</title>
   <style>
     body {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 40px auto;
-      padding: 40px;
+      padding: 20px;
       background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     header {
       text-align: center;
       margin-bottom: 30px;
     }
-    h1, h2 {
+    header h1 {
       color: #2c3e50;
       margin-bottom: 10px;
     }
-    p {
+    header p {
+      font-size: 1rem;
+      color: #555;
+    }
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+      margin-top: 40px;
+      color: #2c3e50;
+    }
+    h3 {
+      color: #34495e;
+      margin: 10px 0 5px;
+    }
+    p, li {
       line-height: 1.6;
-      margin-bottom: 15px;
+      font-size: 0.95rem;
     }
     ul {
-      list-style-type: disc;
-      margin-left: 20px;
+      list-style: none;
+      padding-left: 0;
     }
-    a {
-      color: #3498db;
-      text-decoration: none;
+    ul li {
+      margin-bottom: 8px;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    .section:last-child {
-      margin-bottom: 0;
+    .subsection {
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- 헤더: 이름과 한 줄 소개 -->
+    <!-- 헤더 -->
     <header>
-      <h1>개발자 홍길동</h1>
-      <p>혁신적인 솔루션을 구현하는 웹/앱 개발자</p>
+      <h1>CV - 홍길동</h1>
+      <p>경력, 학력, 기술 및 자격사항을 확인해보세요.</p>
     </header>
 
-    <!-- 자기소개 섹션 -->
-    <section class="section">
-      <h2>자기소개</h2>
-      <p>
-        안녕하세요. 저는 <strong>홍길동</strong>입니다. 다양한 프로그래밍 언어와 최신 기술을 활용하여 문제를 해결하는 데 열정을 가지고 있으며, 지속적인 학습과 성장에 힘쓰고 있습니다. 
-        창의적인 아이디어와 협업을 통해 항상 새로운 도전을 즐기고 있습니다.
-      </p>
+    <!-- 경력 섹션 -->
+    <section>
+      <h2>경력 (Experience)</h2>
+      <div class="subsection">
+        <h3>회사명 A</h3>
+        <p><strong>직책:</strong> 소프트웨어 엔지니어</p>
+        <p><strong>기간:</strong> 2020년 1월 - 현재</p>
+        <ul>
+          <li>주요 프로젝트 및 역할: [프로젝트 설명 및 기여 내용]</li>
+          <li>기술 스택: Python, Django, React 등</li>
+        </ul>
+      </div>
+      <div class="subsection">
+        <h3>회사명 B</h3>
+        <p><strong>직책:</strong> 개발 인턴</p>
+        <p><strong>기간:</strong> 2019년 6월 - 2019년 12월</p>
+        <ul>
+          <li>업무 내용: [업무 내용 및 성과]</li>
+        </ul>
+      </div>
     </section>
 
-    <!-- 기술 스택 섹션 -->
-    <section class="section">
-      <h2>기술 스택</h2>
+    <!-- 학력 섹션 -->
+    <section>
+      <h2>학력 (Education)</h2>
+      <div class="subsection">
+        <h3>대학교명</h3>
+        <p><strong>전공:</strong> 컴퓨터공학</p>
+        <p><strong>기간:</strong> 2015년 - 2019년</p>
+      </div>
+    </section>
+
+    <!-- 기술 및 역량 섹션 -->
+    <section>
+      <h2>기술 및 역량 (Skills)</h2>
       <ul>
         <li>프로그래밍 언어: Python, JavaScript, Java</li>
         <li>웹 프레임워크: React, Node.js, Django</li>
-        <li>데이터베이스: MySQL, PostgreSQL, MongoDB</li>
-        <li>도구 및 기타: Git, Docker, AWS</li>
+        <li>데이터베이스: MySQL, PostgreSQL</li>
+        <li>도구: Git, Docker, AWS</li>
       </ul>
     </section>
 
-    <!-- 경력 및 프로젝트 섹션 -->
-    <section class="section">
-      <h2>경력 및 프로젝트</h2>
-      <p>
-        다양한 프로젝트와 인턴십 경험을 통해 실무 역량을 쌓아왔습니다. 최근에는 <strong>[프로젝트 이름]</strong> 프로젝트를 진행하며, [프로젝트 설명] 등의 경험을 보유하고 있습니다.
-      </p>
+    <!-- 자격증 및 수상 섹션 -->
+    <section>
+      <h2>자격증 및 수상 (Certifications & Awards)</h2>
+      <ul>
+        <li>자격증 1: [자격증 명칭] - 발급 기관 (발급년도)</li>
+        <li>자격증 2: [자격증 명칭] - 발급 기관 (발급년도)</li>
+        <li>수상: [수상 내역 및 설명]</li>
+      </ul>
     </section>
 
-    <!-- 연락처 섹션 -->
-    <section class="section">
-      <h2>연락처</h2>
-      <p>이메일: <a href="mailto:honggildong@example.com">honggildong@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/honggildong" target="_blank">https://github.com/honggildong</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/honggildong" target="_blank">https://linkedin.com/in/honggildong</a></p>
+    <!-- 추가 정보 섹션 -->
+    <section>
+      <h2>추가 정보 (Additional Information)</h2>
+      <p>
+        관심 분야, 언어 능력, 개인 프로젝트 또는 기타 부가 정보를 여기에 작성할 수 있습니다.
+      </p>
     </section>
   </div>
 </body>
